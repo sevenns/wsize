@@ -1,0 +1,31 @@
+@import 'plugins/index'
+@import 'fonts/index'
+@import 'variables/index'
+@import 'functions/index'
+@import 'mixins/index'
+@import 'components/index'
+
+
+*, *::after, *::before
+  box-sizing: border-box
+
+html
+  @include font(default)
+  font-size: $font-size
+
+body
+  @include font(default)
+  color: $color-creamed-raspberry
+  font-size: 1rem
+  line-height: 1.6
+  min-width: 320px
+  overflow-x: hidden
+  position: relative
+  background-color: $color-princely-violet
+
+h1, h2, h3, h4, h5, h6, p
+  margin: 0
+
+textarea, input, select
+  appearance: none !important
+  border-radius: 0 !important
